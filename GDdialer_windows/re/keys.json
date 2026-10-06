@@ -1,0 +1,139 @@
+{
+  "portal_body_codec": {
+    "algorithm": "6-key DES cascade (ECB, 8-byte blocks)",
+    "cascade_order": [
+      "E_k4",
+      "D_k5",
+      "E_k6",
+      "E_k1",
+      "D_k2",
+      "E_k3"
+    ],
+    "cascade_raw": [
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "keys_hex": {
+      "k1": "462b2b2a6c69237a",
+      "k2": "535373683f437e2b",
+      "k3": "7c2b216229407b3f",
+      "k4": "23594b7c747a513b",
+      "k5": "536e5f403a54432a",
+      "k6": "2525624a43275a53"
+    },
+    "keys_ascii": {
+      "k1": "F++*li#z",
+      "k2": "SSsh?C~+",
+      "k3": "|+!b)@{?",
+      "k4": "#YK|tzQ;",
+      "k5": "Sn_@:TC*",
+      "k6": "%%bJC'ZS"
+    },
+    "normalise": "encoding=\"UTF-8\" -> \"utf-8\"; prepend declaration if missing",
+    "padding": "append NUL, round up to 8 bytes, minimum 64",
+    "output": "uppercase hex",
+    "module_rva": {
+      "encoder": "0x6b65",
+      "cascade_helpers": "0x5c78 / 0x5e5b",
+      "key_setup": "0x5a77",
+      "key_table": "0x1000c568+46 (48 bytes)"
+    },
+    "module_entry_rva": "0x8585"
+  },
+  "container_codec": {
+    "format": "001@<32-byte-hex-key>$<Algo-ID>]<payload>",
+    "payload": "8-byte prefix + XXTEA(per 8-byte block) + raw-LZMA",
+    "xxtea_keys_ascii": [
+      "|iKFMm;FZjI6oItG",
+      "mvm536xR8MJ-5C89"
+    ],
+    "xxtea_keys_hex": [
+      "7c694b464d6d3b465a6a49366f497447",
+      "6d766d3533367852384d4a2d35433839"
+    ],
+    "delta": "0x9E3779B9",
+    "rounds": 32,
+    "lzma": {
+      "format": "raw",
+      "lc": 3,
+      "lp": 0,
+      "pb": 2
+    },
+    "verified": "24624 -> XXTEA -> 24616 -> raw-LZMA -> 46596 bytes PE (MZ)"
+  },
+  "spn_cipher": {
+    "note": "ESurfingSvr.exe 内置的自定义 SPN 流密码, 经补丁实验证明【不参与门户 body】, 仅存档",
+    "sboxes": [
+      "artifacts/spn_sbox1.bin",
+      "artifacts/spn_sbox2.bin"
+    ],
+    "funcs": {
+      "linear_layer": "0x432c90",
+      "round": "0x432d80",
+      "mix": "0x432f50",
+      "init": "0x433100",
+      "cipher": "0x4331d0",
+      "entry_wrapper": "0x426200"
+    }
+  },
+  "protocol": {
+    "scripts": [
+      "index.cgi",
+      "ticket.cgi",
+      "state.cgi",
+      "auth.cgi",
+      "keep.cgi",
+      "term.cgi"
+    ],
+    "detection_endpoints_NOT_used": [
+      "/esurfing/esurfingclient/Wifisignal",
+      "/detect.html",
+      "CheckWifi"
+    ],
+    "headers": {
+      "User-Agent": "CCTP/WinSVR5/1068",
+      "Client-ID": "1009758f-89f4-413c-929b-c5e0e35b0d54",
+      "CDC-SchoolId": "1099",
+      "CDC-Domain": "sise.cn",
+      "CDC-Area": "020",
+      "CDC-Checksum": "md5hex(body)",
+      "Algo-ID": "from container"
+    },
+    "url_params": [
+      "wlanacip",
+      "wlanuserip",
+      "clientip",
+      "wlanacname",
+      "clientmac",
+      "paip",
+      "vlan",
+      "iarmdst"
+    ],
+    "servers": [
+      "14.146.227.141:7001",
+      "121.8.177.212:7001"
+    ]
+  }
+}

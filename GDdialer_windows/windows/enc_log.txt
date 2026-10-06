@@ -1,0 +1,22 @@
+watching ['ESurfingSvr.exe', 'ESurfingClient.exe'] for 150s
+[5404] [*] module base = 0x3760000
+[5404] [*] hooked encoder +0x6b65
+[5404] === ENCODE #1 xml@0x94dff0
+[5404]   XML: <?xml version="1.0" encoding="UTF-8"?><request>
+
+<reason>7</reason>
+
+<local-time>2026-10-06 03:20:30</local-time>
+
+<ticket>8e51f4ce78867e69a2c77d950b97ec63</ticket>
+
+<client-id>1009758f-89f4-413c-929b-c5e0e35b0d54</client-id>
+
+<user-agent>CCTP/WinSVR5/1068</user-agent>
+
+</request>
+[5404]   OUT@0x8b59f0: 43 38 35 33 41 39 39 36 38 34 39 36 42 33 45 30 36 32 42 36 34 30 44 46 37 41 39 41 30 32 32 43 41 38 41 46 34 42 35 31 46 31 35 37 42 34 38 42 38 46 33 43 42 34 37 34 38 34 32 33 31 32 44 34 37 36 32 44 38 45 46 46 39 39 43 34 41 30 34 36 33 36 30 45 37 44 42 37 42 31 46 43 34 36 46 37
+[5404]   OUTascii: C853A9968496B3E062B640DF7A9A022CA8AF4B51F157B48B8F3CB474842312D4762D8EFF99C4A046360E7DB7B1FC46F7
+[9388] [*] module base = 0x36a0000
+[9388] [*] hooked encoder +0x6b65
+done

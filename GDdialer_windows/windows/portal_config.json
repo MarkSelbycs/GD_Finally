@@ -1,0 +1,35 @@
+{
+  "endpoints": {
+    "ticket_url": "http://14.146.227.141:7001/ticket.cgi?",
+    "auth_url": "http://14.146.227.141:7001/auth.cgi",
+    "keep_url": "http://14.146.227.142:7001/keep.cgi",
+    "term_url": "http://14.146.227.141:7001/term.cgi",
+    "state_url": "http://14.146.227.141:7001/state.cgi",
+    "query_url": "http://14.146.227.141:7001/query.cgi",
+    "ticket_params": {
+      "wlanacip": "183.3.151.148",
+      "wlanuserip": "172.17.104.130",
+      "clientip": "172.17.104.130",
+      "wlanacname": "SISE",
+      "clientmac": "a4:fa:76:44:ba:e8",
+      "paip": "10.88.88.88",
+      "vlan": "100.0",
+      "iarmdst": "www.189.cn/",
+      "portal_node": ""
+    }
+  },
+  "identity": {
+    "user_agent": "CCTP/WinSVR5/1068",
+    "client_id": "1009758f-89f4-413c-929b-c5e0e35b0d54",
+    "host_name": "",
+    "ipv4": "172.17.104.130",
+    "ipv6": "",
+    "mac": "a4:fa:76:44:ba:e8",
+    "ostag": "winsvr5",
+    "algo_id": "E9747EF1-6849-4F87-957B-3B93E6A90393",
+    "cdc_checksum": "",
+    "cdc_school_id": "1099",
+    "cdc_domain": "sise.cn",
+    "cdc_area": "020"
+  }
+}

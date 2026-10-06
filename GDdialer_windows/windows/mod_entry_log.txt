@@ -1,0 +1,58 @@
+watching ['ESurfingSvr.exe', 'ESurfingClient.exe'] for 150s
+[2728] [*] module base = 0x3520000  (entry 0x3528585, MZ ok)
+[2728] [*] hooked 12 module offsets
+[+] attached 2728
+[!] attach 7196 failed: the connection is closed
+[2728] === +0x6b65  a0=0x1c22758 a1=0x3526b65 a2=0xecd080
+   a0 [<?xml version="1.0" encoding="UTF-8"?><request>..<reason>7</reason>..<lo]
+   a1 [......SVWt.u...X.........P......}............Q...A..u.+..........=..R...]
+   a2 [47....R.............................-...............-...............-...]
+[2728] === +0x6f1b  a0=0xec8b40 a1=0x3526f1b a2=0xecd080
+   a0 [6B2A1F28604B6205D843A96DC27DE338A27487B9B9E3C8A635D209880E75C8792C695324]
+   a1 [.....f.t!...R...t..x..t.j..p.....R...t.]..]..........3.....u.....=.U...S]
+   a2 [47....R.............................-...............-...............-...]
+[!] attach 4756 failed: unexpected error while attaching to process with pid 4756 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 4756 failed: unexpected error while attaching to process with pid 4756 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 4756 failed: unexpected error while attaching to process with pid 4756 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 4756 failed: unexpected error while attaching to process with pid 4756 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 4756 failed: unexpected error while attaching to process with pid 4756 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 4756 failed: unexpected error while attaching to process with pid 4756 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 4756 failed: unexpected error while attaching to process with pid 4756 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 4756 failed: unexpected error while attaching to process with pid 4756 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 4756 failed: unexpected error while attaching to process with pid 4756 (RtlCreateUserThread returned 0xc000010a)
+[-] 2728 exited
+[+] attached 10572
+[8760] [*] module base = 0x3bf0000  (entry 0x3bf8585, MZ ok)
+[8760] [*] hooked 12 module offsets
+[+] attached 8760
+[8760] === +0x7808  a0=0x412f72c a1=0x80 a2=0x0
+   a0 [........................................................................]
+[8760] === +0x6b65  a0=0x232b840 a1=0x3bf6b65 a2=0x22eaec0
+   a0 [<?xml version="1.0" encoding="UTF-8"?><request>..<reason>7</reason>..<lo]
+   a1 [......SVWt.u...X.........P......}............Q...A..u.+..........=......]
+   a2 [47B.....*.[%........-...(.]%....node_ip..._%........0yQ.,.Q%....node_ip.]
+[8760] === +0x6f1b  a0=0x2344860 a1=0x3bf6f1b a2=0x22eaec0
+   a0 [6B2A1F28604B6205D843A96DC27DE338A27487B9B9E3C8A635D209880E75C8792C695324]
+   a1 [.....f.t!.......t..x..t.j..p.........t.]..]..........3.....u.....=.U...S]
+   a2 [47B.....*.[%............(.]%....node_ip..._%........0yQ.,.Q%....node_ip.]
+[-] 10572 exited
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[!] attach 8080 failed: unexpected error while attaching to process with pid 8080 (RtlCreateUserThread returned 0xc000010a)
+[+] attached 2236
+[5404] [*] module base = 0x3760000  (entry 0x3768585, MZ ok)
+[5404] [*] hooked 12 module offsets
+[+] attached 5404
+[-] 8760 exited
+done

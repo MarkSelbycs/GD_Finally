@@ -1,0 +1,54 @@
+真实抓包报文 -> 解密后的明文 XML
+============================================================
+
+--- ticket (752 hex / 376 B) ---
+<?xml version="1.0" encoding="utf-8"?><request>
+<ostag>Windows 10(19045),64 bit </ostag>
+<local-time>0000000SD</local-time>
+<gwip>172.17.107.254</gwip>
+<mac>6C-1F-F7-31-85-C5</mac>
+<ipv6></ipv6>
+<ipv4>172.17.104.130</ipv4>
+<client-id>1009758f-89f4-413c-929b-c5e0e35b0d54</client-id>
+<user-agent>CCTP/WinSVR5/1068</user-agent>
+<host-name>DESKTOP-IC8UURD</host-name>
+</request>
+
+--- keep   (784 hex / 392 B) ---
+<?xml version="1.0" encoding="utf-8"?><request>
+<local-time>0000000SG</local-time>
+<excheck-args><hello>63635</hello><conn>50225</conn></excheck-args>
+<mac>6C-1F-F7-31-85-C5</mac>
+<ipv6></ipv6>
+<ipv4>172.17.104.130</ipv4>
+<ticket>299db8c9df6feed3c8edf80c0462a4b2</ticket>
+<client-id>1009758f-89f4-413c-929b-c5e0e35b0d54</client-id>
+<user-agent>CCTP/WinSVR5/1068</user-agent>
+</request>
+
+--- auth   (608 hex / 304 B) ---
+<?xml version="1.0" encoding="utf-8"?><request>
+<local-time>0000000SG</local-time>
+<ticket>299db8c9df6feed3c8edf80c0462a4b2</ticket>
+<passwd>12272029</passwd>
+<userid>12345678910</userid>
+<client-id>1009758f-89f4-413c-929b-c5e0e35b0d54</client-id>
+<user-agent>CCTP/WinSVR5/1068</user-agent>
+</request>
+
+--- state  (496 hex / 248 B) ---
+<?xml version="1.0" encoding="utf-8"?><request>
+<local-time>0000000SD</local-time>
+<ticket>299db8c9df6feed3c8edf80c0462a4b2</ticket>
+<client-id>1009758f-89f4-413c-929b-c5e0e35b0d54</client-id>
+<user-agent>CCTP/WinSVR5/1068</user-agent>
+</request>
+
+--- term   (544 hex / 272 B) ---
+<?xml version="1.0" encoding="utf-8"?><request>
+<reason>1</reason>
+<local-time>0000000SC</local-time>
+<ticket>8c9274d389f87a3a1eedb57b334861d5</ticket>
+<client-id>1009758f-89f4-413c-929b-c5e0e35b0d54</client-id>
+<user-agent>CCTP/WinSVR5/1068</user-agent>
+</request>
